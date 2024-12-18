@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <title>Svelte Summit: Marking Country by Tabs / @ladyofcode</title>
+</head>
+
+<body>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <section id="first">
+                <div class="main-title">
+                    <video src="./assets/video/home_map.mp4" autoplay loop muted></video>
+                    <div>
+                        <h1>Marking Country</h1>
+                        <h2>A scrollytelling saga</h2>
+                        <p>by Tabs / @ladyofcode</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section>
+                <div class="content contents">
+                    <ul>
+                        <li>Project</li>
+                        <li>Scrollytelling</li>
+                        <li>Tech</li>
+                        <li>Bye React 👋</li>
+                        <li>Components</li>
+                        <li>Demo</li>
+
+                    </ul>
+                </div>
+            </section> -->
+
+            <section>
+                <div class="content me">
+                    <div class="clmn-two">
+                        <div class="left">
+                            <img src="./assets/images/me.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h2>Tabs</h2>
+                            <p>Dev · Design · DevRel</p>
+                            <p>ladyofcode.com</p>
+                            <div class="icons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                    image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 640 640">
+                                    <path
+                                        d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" height="64"
+                                    text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+                                    fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64">
+                                    <rect width="512" height="509.64" rx="115.61" ry="115.61" />
+                                    <path fill="#ebebeb"
+                                        d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                    image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 640 640">
+                                    <path
+                                        d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                                    image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                                    viewBox="0 0 439 512.167">
+                                    <g fill-rule="nonzero">
+                                        <path fill="#ebebeb"
+                                            d="M402.415 237.792l-73.165 73.166h-73.167l-64.021 64.021v-64.021H109.75V36.585h292.665z" />
+                                        <path fill="#000000"
+                                            d="M402.415 237.792l-73.165 73.166h-73.167l-64.021 64.021v-64.021H109.75V36.585h292.665v201.207zM91.458 0L0 91.457v329.251h109.75v91.458l91.458-91.458h73.167L439 256.083V0H91.458z" />
+                                        <path fill="#000000"
+                                            d="M310.958 210.354h36.584v-109.75h-36.584zM210.354 210.354h36.583v-109.75h-36.583z" />
+                                    </g>
+                                </svg>
+
+                                <p>@ladyofcode</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
+
+            <p class="year 2018">2018</p>
+
+            <section>
+                <div class="content">
+                    <h2>Current Stack</h2>
+                    <div class="stack">
+                        <img src="./assets/images/logos/aurelia-1.svg" alt="">
+                        <img src="./assets/images/logos/Elixir.png" alt="">
+                        <img src="./assets/images/logos/H6logo_intro.png" alt="">
+                    </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>$3 mil research project</h2>
+                    <div class="clmn-two">
+                        <div class="left">
+                            <img src="./assets/images/logos/Full_Lockup_White.png" alt="">
+                        </div>
+                        <div class="right">
+                            <img src="./assets/images/logos/anu_horizontal.png" alt="">
+                            <img src="./assets/images/logos/arc-logo-white.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>Research Centre for Deep History</h2>
+                    <ul>
+                        <li>Expands history’s time scale and scope</li>
+                        <li>Focuses on human history in Australia (60k+ years old!)</li>
+                        <li>Learns from indigenous history</li>
+                        <ul>
+                            <li>time</li>
+                            <li>people’s embeddedness in Country</li>
+                            <li>stories</li>
+                            <li>song</li>
+                        </ul>
+                        <li>Community-collaborative research</li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <p class="year 2019">2019</p>
+
+            <section>
+                <div class="content">
+                    <img src="./assets/images/re_wireframes.jpg" alt="">
+                </div>
+            </section>
+
+
+            <section>
+                <div class="content">
+                    <img src="./assets/images/old_site.jpg" alt="">
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>Current Stack</h2>
+                    <div class="stack">
+                        <img src="./assets/images/logos/gatsby.png" alt="">
+                        <img src="./assets/images/logos/React Logo.svg" alt="">
+                        <img src="./assets/images/logos/Strapi.monogram.logo.png" alt="">
+                        <img src="./assets/images/logos/Red_Hat_logo.svg" alt="">
+                    </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>Marking Country</h2>
+                    <ul>
+                        <li>‘Marking Country visualises Australia's deep history.</li>
+                        <li>... far beyond the two and a half centuries since the arrival of British ships...’</li>
+                        <li>Indigenous ways of knowing Country have been practiced for millennia—by some estimates at
+                            least
+                            65,000 years...’</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="content title">
+                    <h2>Scrolljacking</h2>
+                </div>
+            </section>
+
+            <section class="collage">
+                <img id="reddit1" src="./assets/images/sj_reddit1.jpg" alt="">
+                <img id="reddit2" src="./assets/images/sj_reddit2.jpg" alt="">
+                <img id="thread" src="./assets/images/sj_thread.jpg" alt="">
+                <img id="twitter1" src="./assets/images/sj_twitter1.jpg" alt="">
+                <img id="twitter2" src="./assets/images/sj_twitter2.jpg" alt="">
+                <img id="twitter3" src="./assets/images/sj_twitter3.jpg" alt="">
+            </section>
+
+            <section>
+                <div class="content scrollytelling">
+                    <!-- This is not semantic HTML; don't hate me -->
+                    <h2>scrolling + storytelling</h2>
+                    <h2>=scrollytelling</h2>
+                </div>
+            </section>
+
+            <section>
+                <div class="content scrolljacking">
+                    <div class="square"></div>
+                </div>
+            </section>
+
+            <p class="year 2020">2020</p>
+
+            <section>
+                <div class="content">
+                    <p>There isn't much on Marking Country yet.</p>
+                </div>
+            </section>
+
+            <p class="year 2021">2021</p>
+
+            <section>
+                <div class="content">
+                    <h2>Small movement!</h2>
+                    <ul>
+                        <li>Research starts materialising (secretly)</li>
+                        <li>I'm siloed from the team</li>
+                        <li>Marking Country content starts materialising on the Centre site</li>
+                    </ul>
+
+                    <img src="./assets/images/atlas.png" alt="">
+                </div>
+            </section>
+
+            <p class="year 2022">2022</p>
+
+            <section>
+                <div class="content">
+                    <h2>Marking Country soft launch</h2>
+
+                    <ul>
+                        <li>We create a demo video at a symposium launch</li>
+                        <li>There isn't enough to reliably live demo...</li>
+                        <li>... I was still being given content the week before launch</li>
+                        <li>Mixed reviews e.g. 'too colonial'</li>
+                    </ul>
+
+                    <img src="./assets/images/colonial.png" alt="">
+                </div>
+
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>Top tip: ensure people understand the difference between storyboards, wireframes, and mockups.
+                    </h2>
+                </div>
+            </section>
+
+            <p class="year 2023">2023</p>
+
+            <section>
+                <div class="content">
+                    <h2>Drastic redesign</h2>
+
+                    <img src="./assets/images/look-and-feel-re.jpg" alt="">
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>Launched!</h2>
+
+                    <ul>
+                        <li>Less than two weeks to go and I add GSAP</li>
+                        <li>'I hate this'</li>
+                        <li>Still being given content...</li>
+                        <li>I convert it all to Svelte</li>
+                        <li>Add GSAP. It's plays nicely enough.</li>
+                        <li>Took a week. Worth it.</li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>Current Stack</h2>
+                    <div class="stack">
+                        <img src="./assets/images/logos/svelte-logo-square.png" alt="">
+                        <img src="./assets/images/logos/WordPress-logotype-wmark.png" alt="">
+                    </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <!-- Normally I'd use a figure + figcaption but not today, skippy -->
+                    <img src="./assets/images/kevin_rudd.jpg" alt="">
+
+                    <p class="caption">‘Ambassador of Australia to the United States, Kevin Rudd AC hosted ANU
+                        Professors Ann
+                        McGrath and Jackie
+                        Huggins AM FAHA to launch the Marking Country map’</p>
+
+                </div>
+
+            </section>
+
+            <p class="year 2023">2024</p>
+
+            <section>
+                <div class="content">
+                    <h2>Doubled the number of components</h2>
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+
+                    <p>... I'm still fixing bugs lol.</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>React -> Svelte</h2>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>Refs/Binds</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactRefs.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteRefs.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>Using GSAP</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactGSAP.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteGSAP.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>Reactivity</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactReactive.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteReactive.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>Arrays</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactEach.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteEach.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>Click!</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactClick.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteClick.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>Conditionals</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactIf.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteIf.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>Pages and Routes</h2>
+                    <div class="snippets vertical">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactRoutes.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteRoutes.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>Bye Sass</h2>
+                    <div class="snippets vertical">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactSass.jpg" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteSass.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>Binding: React one-way vs Svelte two-way</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactAudio.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteAudio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="snippets-section">
+                <div class="content">
+                    <h2>React Context vs Svelte Store</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <h3>React</h3>
+                            <img src="./assets/images/code/ReactContext.png" alt="">
+                        </div>
+                        <div class="right">
+                            <h3>Svelte</h3>
+                            <img src="./assets/images/code/SvelteStore.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>Component: ImageSingle using Photoswipe</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <img src="./assets/images/code/DemoImageSingleJS.png" alt="">
+                        </div>
+                        <div class="right">
+                            <img src="./assets/images/code/DemoImageSingleMarkup.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <h2>Component: CaptionScroller</h2>
+                    <div class="snippets">
+                        <div class="left">
+                            <img src="./assets/images/code/DemoCaptionScrollerJS.png" alt="">
+                        </div>
+                        <div class="right">
+                            <img src="./assets/images/code/DemoCaptionScrollerMarkup.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Add this class to the references section -->
+            <section class="references">
+                <div class="content">
+                    <h2>Sources</h2>
+                    <h3>Logos</h3>
+                    <ul>
+                        <li>Aurelia: https://worldvectorlogo.com/logo/aurelia-1</li>
+                        <li>Elixir: https://techicons.dev/icons/elixir</li>
+                        <li>Heurist: https://commons.wikimedia.org/wiki/File:H6logo_intro.png</li>
+                        <li>React: https://en.m.wikipedia.org/wiki/File:React-icon.svg</li>
+                        <li>Gatsby: https://www.gatsbyjs.com/guidelines/logo</li>
+                        <li>Strapi: https://handbook.strapi.io/strapi-brand-book-2022/strapi-logo</li>
+                        <li>RHEL: https://en.m.wikipedia.org/wiki/File:Red_Hat_logo.svg</li>
+                        <li>Leaflet: https://leafletjs.com/</li>
+                        <li>GSAP: https://logos.fandom.com/wiki/GSAP</li>
+                        <li>Svelte: https://github.com/sveltejs/branding</li>
+                        <li>WordPress: https://en-au.wordpress.org/about/logos/</li>
+                    </ul>
+
+                    <h3>Images</h3>
+                    <ul>
+                        <li>
+                            Ambassor Kevin Rudd presenting map:
+                            https://cass.anu.edu.au/news/marking-country-map-launched-new-australian-embassy-washington-dc
+                        </li>
+                    </ul>
+
+                    <h3>Music</h3>
+                    <ul>
+                        <li>Local Forecast - Elevator Kevin MacLeod (incompetech.com)
+                            Licensed under Creative Commons: By Attribution 3.0 License
+                            http://creativecommons.org/licenses/by/3.0/</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+
+                    <h2>Thank you!</h2>
+                    <div class="icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 640 640">
+                            <path
+                                d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" height="64"
+                            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                            clip-rule="evenodd" viewBox="0 0 512 509.64">
+                            <rect width="512" height="509.64" rx="115.61" ry="115.61" />
+                            <path fill="#ebebeb"
+                                d="M204.97 197.54h64.69v33.16h.94c9.01-16.16 31.04-33.16 63.89-33.16 68.31 0 80.94 42.51 80.94 97.81v116.92h-67.46l-.01-104.13c0-23.81-.49-54.45-35.08-54.45-35.12 0-40.51 25.91-40.51 52.72v105.86h-67.4V197.54zm-38.23-65.09c0 19.36-15.72 35.08-35.08 35.08-19.37 0-35.09-15.72-35.09-35.08 0-19.37 15.72-35.08 35.09-35.08 19.36 0 35.08 15.71 35.08 35.08zm-70.17 65.09h70.17v214.73H96.57V197.54z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 640 640">
+                            <path
+                                d="M319.988 7.973C143.293 7.973 0 151.242 0 327.96c0 141.392 91.678 261.298 218.826 303.63 16.004 2.964 21.886-6.957 21.886-15.414 0-7.63-.319-32.835-.449-59.552-89.032 19.359-107.8-37.772-107.8-37.772-14.552-36.993-35.529-46.831-35.529-46.831-29.032-19.879 2.209-19.442 2.209-19.442 32.126 2.245 49.04 32.954 49.04 32.954 28.56 48.922 74.883 34.76 93.131 26.598 2.882-20.681 11.15-34.807 20.315-42.803-71.08-8.067-145.797-35.516-145.797-158.14 0-34.926 12.52-63.485 32.965-85.88-3.33-8.078-14.291-40.606 3.083-84.674 0 0 26.87-8.61 88.029 32.8 25.512-7.075 52.878-10.642 80.056-10.76 27.2.118 54.614 3.673 80.162 10.76 61.076-41.386 87.922-32.8 87.922-32.8 17.398 44.08 6.485 76.631 3.154 84.675 20.516 22.394 32.93 50.953 32.93 85.879 0 122.907-74.883 149.93-146.117 157.856 11.481 9.921 21.733 29.398 21.733 59.233 0 42.792-.366 77.28-.366 87.804 0 8.516 5.764 18.473 21.992 15.354 127.076-42.354 218.637-162.274 218.637-303.582 0-176.695-143.269-319.988-320-319.988l-.023.107z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                            shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                            image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+                            viewBox="0 0 439 512.167">
+                            <g fill-rule="nonzero">
+                                <path fill="#ebebeb"
+                                    d="M402.415 237.792l-73.165 73.166h-73.167l-64.021 64.021v-64.021H109.75V36.585h292.665z" />
+                                <path fill="#252422"
+                                    d="M402.415 237.792l-73.165 73.166h-73.167l-64.021 64.021v-64.021H109.75V36.585h292.665v201.207zM91.458 0L0 91.457v329.251h109.75v91.458l91.458-91.458h73.167L439 256.083V0H91.458z" />
+                                <path fill="#252422"
+                                    d="M310.958 210.354h36.584v-109.75h-36.584zM210.354 210.354h36.583v-109.75h-36.583z" />
+                            </g>
+                        </svg>
+
+                        <p>@ladyofcode</p>
+                        <p>ladyofcode.com</p>
+
+                    </div>
+
+                </div>
+        </div>
+        </section>
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./gsap/ScrollTrigger.min.js"></script>
+    <script src="./gsap/ScrollSmoother.min.js"></script>
+    <script src="./scripts/main.js"></script>
+
+
+
+</body>
+
+</html>
